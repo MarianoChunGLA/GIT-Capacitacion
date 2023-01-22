@@ -6,5 +6,8 @@ Se creó un nuevo archivo llamado "index.html" para subir un cambio nuevo al rep
 
 ## Desafio 2
 
-### Ejercicio 2
+### Ejercicio 1
 Se clonó el repositorio en otra carpeta distinta a la original, por medio del comando "git clone https://github.com/MarianoChunGLA/GIT-Capacitacion.git < alias >". En el repo clonado se modifico el archivo index.html, agregandole un < p > con texto. Finalmente, se agregaron al stage area los cambios, se hizo un commit de los cambios hechos con el nombre de "Add paragraph a index.html - Desafio 2 - Ejercicio 1" y se pushearon los cambios al repo remoto.
+
+### Ejercicio 2
+Para resolver la consigna, se hizo una copia del repo de nest js por medio de un "fork". El mismo se encuentra en el siguiente repo: https://github.com/MarianoChunGLA/fork-nestJs-git-capacitacion
