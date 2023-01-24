@@ -27,3 +27,17 @@ Por último, se mandaron todos estos cambios no commiteados al stash por medio d
 Primero se mergearon los cambios de la rama "main" a "custom-navbar", el cual constaba del borrado del archivo "status.js". Luego se sacó del stash los cambios guardados en el ejercicio anterior por medio del comando "git stash pop" y se commitearon los cambios.
 
 Finalmente, para cumplir la consigna, cambiamos a la rama "main" y efectuamos un merge con la rama "custom-navbar", para traer todos los cambios efectuados en esta última. De esta forma, terminamos con el push de los cambios desde la rama "main" al remoto (en teoria, a producción).
+
+## Desafio 4
+
+### Ejercicio 1
+Para resolver el ejercicio, agregamos a este repo varios commits, entre los cuales se encuentra el que agrega la funcion getAllAccounts() que arroja el error.
+
+Una vez hecho esto, para resolver la consigna se ejecuto el comando "git log -S getAllAccounts" para localizar los commits en los cuales se encuentra la función, más especificamente en aquel en el que se creó.
+
+![Imagen-comando-git-log](https://user-images.githubusercontent.com/121968868/214195719-5a2cf0bd-91be-4234-8db8-32d815c66670.png)
+
+### Ejercicio 2
+Ahora para revertir el cambio, utilizamos el comando "git revert < hash-commit >" para dicho proposito. En este caso, utilizamos "git revert 6b81f57" el cual utiliza el hash abreviado del commit.
+
+Dicho revert generó conflictos, por lo que luego de resolverlos, se utilizó el comando "git revert --continue" para confirmar los nuevos cambios y generar un commit con el registro del revert
